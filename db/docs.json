@@ -83,5 +83,19 @@
             "arg_req":true,
             "arg_desc":"Has to be an existing id"
         }]
+    },
+
+    {
+        "id":31,
+        "is_displayed": true,
+        "method":"post",
+        "end_point": "/api/reset_poke.php",
+        "description":"Resets user poke count",
+        "args": [{
+            "arg_name":"id",
+            "arg_type":"numeric",
+            "arg_req":true,
+            "arg_desc":"Has to be an existing id"
+        }]
     }
 ]
