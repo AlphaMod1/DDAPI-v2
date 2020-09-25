@@ -42,6 +42,7 @@ define('LOC', 'other')
     <p class="github">Do you want to help me out? You can help me develop this page here: <a href="https://github.com/AlphaMod1/DDAPI/">https://github.com/AlphaMod1/DDAPI/</a></p>
     <script src="./js/darkmode.js"></script>
     <script src='./js/main.js'></script>
+    <script src="./js/dropdown.js"></script>
 </body>
 
 </html>
