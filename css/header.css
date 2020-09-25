@@ -1,0 +1,51 @@
+.darkmode span {
+    color: var(--light);
+}
+
+.header {
+    height: 50px;
+    background-color: var(--dark);
+    padding: 10px 10px;
+    margin-bottom: 3rem;
+}
+
+.header a {
+    float: left;
+    color: var(--light);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header a:hover {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.header a.active {
+    background-color: darkgreen;
+    color: white;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right>* {
+    margin-right: 5px;
+}
+
+.darkmode .text {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+}
