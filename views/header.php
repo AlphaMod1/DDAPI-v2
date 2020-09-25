@@ -11,6 +11,7 @@ if (!defined('LOC')) {
 ?>
 
 <div class="header">
+  <button class="fa fa-bars"></button>
   <a href="./index.php" class="logo">DDAPI</a>
   <div class="header-right">
     <a <?= LOC == 'home' ? 'class="active"' : 'class="nActive"' ?> href="./index.php">Home</a>

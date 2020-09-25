@@ -76,6 +76,7 @@ define('LOC', 'docs')
     <script src="./js/darkmode.js"></script>
     <script src='./js/docs.js'></script>
     <script src='./js/main.js'></script>
+    <script src="./js/dropdown.js"></script>
 </body>
 
 </html>
