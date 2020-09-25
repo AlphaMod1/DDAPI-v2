@@ -1,0 +1,54 @@
+
+@media screen and (max-width: 500px) {
+    .header > a {
+        float: none;
+        display: block;
+        padding-left: -10px;
+    }
+    .header{
+        margin-bottom: 3rem;
+    }
+    #dropdown{
+        margin-top: -10px;
+    }
+    .header-right {
+        display: none;
+        float: left;
+        background-color: var(--dark);
+        width: 100vw;
+        margin-left: -10px;
+        
+    }
+    .fa-bars {
+        display: inline-block;
+        float: left;
+        background: none;
+        border: none;
+        font-size: 20px;
+        margin-top: 0.8rem;
+        text-decoration: none;
+        transition: 0.7s ease-in-out;
+    }
+    
+    .fa-bars:focus {
+        outline: none;
+    }
+    .fa-bars:hover{
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .header-right{
+        margin-bottom: 50px;
+    }
+    .header-right > a {
+        display: block;
+        float: none;
+    }
+    .header-right > .fa-gear{
+        float: right;
+        margin-right: 20px;
+    }
+}
