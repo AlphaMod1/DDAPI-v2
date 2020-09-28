@@ -13,5 +13,4 @@ window.onresize = () => {
     if (window.innerWidth > 500) {
         nav.style.display = "inline-block";
     }
-
 }

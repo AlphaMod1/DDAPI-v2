@@ -37,8 +37,8 @@ for ($i = 0; $i < count($dirs); $i++) {
     $html .= '<a href=./other/' . $dirs[$i] . '>' . $flavortext[0] . '</a> | <span>' . $flavortext[1] . '</span></div>';
 }
 echo $html . '</div>';
-?>
-<footer>
+?> 
+<footer class="footer">
     <p class="github">Do you want to help me out? You can help me develop this page here: <a href="https://github.com/AlphaMod1/DDAPI/">https://github.com/AlphaMod1/DDAPI/</a></p>
 </footer>
     <script src="./js/darkmode.js"></script>
