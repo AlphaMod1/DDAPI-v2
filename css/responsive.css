@@ -4,12 +4,20 @@
         float: none;
         display: block;
         padding-left: -10px;
+        margin: 0 15% 0 15%;
     }
     .header{
-        margin-bottom: 3rem;
+        width: 100vw;
+        min-height: 50px;
+        overflow:auto; 
     }
-    #dropdown{
-        margin-top: -10px;
+    .header > a:hover{
+        display: block;
+        margin: 0 15% 0 15%;
+    }
+   
+    .gear-is-open{
+        margin-bottom: 50px;
     }
     .header-right {
         display: none;
@@ -51,4 +59,23 @@
         float: right;
         margin-right: 20px;
     }
+    #dropdown{
+        font-size: 15px;
+        padding-top: 10px;
+
+    }
+    .fa-moon-o{
+        font-size: 11px;
+    }
+    .switch{
+        margin-left: 31%;
+    }
+    #dropdown > span{
+        margin-left: 20px;
+    }
+    .fa-gear{
+        margin-top: 10px;
+    }
 }
+/* Docs */
+
