@@ -1,0 +1,17 @@
+.login input[type="text"], .register input[type="text"]{
+    display: block;
+    margin-bottom: 10px;
+}
+.login, .register{
+    width: 200px;
+    margin: auto;
+}
+.register-btn{
+    background: none;
+    border: none;
+    margin: 10px 0 0 7px;
+    text-decoration: underline;
+}
+.register{
+    display: none;
+}
