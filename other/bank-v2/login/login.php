@@ -1,52 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
 </head>
-
 <body>
-    <div class="login">
-        <form action="" method="POST">
-            <p>Log in:</p>
-            <input type="text" id="name" name="user" placeholder="Username">
-            <input type="text" id="password" name="password" placeholder="password">
-        </form>
-        <button class="register-btn">Don't have an account?</button>
-    </div>
-    <div class="register">
-        <form action="" method="POST">
-            <p>Register: </p>
-            <input type="text" placeholder="Username" name="registerUser">
-            <input type="text" placeholder="Password" name="registerPassword">
-            <input type="text" placeholder="Repeat" name="registerRepeat">
-        </form>
-        <button class="login-btn">Already have an account?</button>
-    </div>
-    <?php // Register
-    $account = [
-        "username" => $_POST["registerUser"],
-        "password" => crypt($_POST["registerPassword"])
-    ];
-    if(isset($_POST["registerUser"]) && isset($_POST["registerPassword"]) && isset($_POST["registerRepeat"])){
-        // array_push(database, $account);
-        // file_put_contents('', json_encode(database));
-        // header("Location:");
-    }
-    ?>
-    <?php // Login
-    if(isset($_POST["user"]) && isset($_POST["password"])){
-        for($i = 0 ; $i < count(database); $i++){
-            if(database[$i]["username"] == $_POST["user"] && database[$i]["password"] == $_POST["password"]){
-                echo "logged in";
-            }
-        }
-    }
-    ?>
-    <script src="./js/login.js"></script>
-</body>
+<script src="https://code.jquery.com/jquery-2.1.0.min.js" ></script>
+<div id="formWrapper">
 
+<div id="form">
+<div class="logo">
+<a href="./index.html"><img src="../homepage/img/logov2.png" alt="Logo"></a>
+</div>
+		<div class="form-item">
+			<p class="formLabel">username</p>
+			<input type="text" name="email" id="email" class="form-style" autocomplete="off"/>
+		</div>
+		<div class="form-item">
+			<p class="formLabel">Password</p>
+			<input type="password" name="password" id="password" class="form-style" />
+			<!-- <div class="pw-view"><i class="fa fa-eye"></i></div> -->
+			<p><a href="#" ><small>Forgot Password ?</small></a></p>	
+		</div>
+		<div class="form-item">
+		<p class="pull-left"><a href="register.php"><small>Register</small></a></p>
+		<input type="submit" class="login pull-right" value="Log In">
+		<div class="clear-fix"></div>
+        </div>
+    </div>
+</div>
+<script src="../login/js/login.js"></script>
+</body>
 </html>

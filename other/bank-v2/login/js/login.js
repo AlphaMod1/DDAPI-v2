@@ -1,17 +1,24 @@
-const register = document.querySelector(".register");
-const registerbtn = document.querySelector(".register-btn");
-const login = document.querySelector(".login");
-const loginbtn = document.querySelector(".login-btn");
 
-registerbtn.addEventListener("click", () => {
-    register.style.display = "block";
-    registerbtn.style.display = "none";
-    login.style.display = "none";
-    loginbtn.style.display = "block";
+
+
+
+
+
+$(document).ready(function(){
+	var formInputs = $('input[type="text"],input[type="password"]');
+	formInputs.focus(function() {
+       $(this).parent().children('p.formLabel').addClass('formTop');
+       $('div#formWrapper').addClass('darken-bg');
+       $('div.logo').addClass('logo-active');
+	});
+	formInputs.focusout(function() {
+		if ($.trim($(this).val()).length == 0){
+		$(this).parent().children('p.formLabel').removeClass('formTop');
+		}
+		$('div#formWrapper').removeClass('darken-bg');
+		$('div.logo').removeClass('logo-active');
+	});
+	$('p.formLabel').click(function(){
+		 $(this).parent().children('.form-style').focus();
+	});
 });
-loginbtn.addEventListener("click", () =>{
-    register.style.display = "none";
-    registerbtn.style.display = "block";
-    login.style.display = "block";
-    loginbtn.style.display = "none";
-})

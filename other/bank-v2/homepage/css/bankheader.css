@@ -1,14 +1,4 @@
-header{
-    width: 70%;
-    margin: auto;
-}
-.logo{
-    margin-left: 10px;
-    display: inline-block;
-}
-img{
-    height: 70px;
-}
+
 .login{
     float: right;
     margin-right: 15px;
