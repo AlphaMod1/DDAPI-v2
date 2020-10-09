@@ -1,4 +1,5 @@
 <?php
+include 'restrictions.php';
 $servername = "localhost";
 $database = "u632487067_ddapi_prod";
 $username = "u632487067_admin_prod";
