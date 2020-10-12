@@ -16,16 +16,21 @@
 <body>
     <header>
         <div class="logo">
-            <a href="./index.html"><img src="./homepage/img/logov2.png" alt="Logo"></a>
+            <a href="./index.php"><img src="./homepage/img/logov2.png" alt="Logo"></a>
         </div>
         <div class="login">
             <button class="login-btn"><a href="./login/login.php"><i class="fa fa-sign-in fa-1x"></i> Log In</a></button>
         </div>
     </header>
-    <!-- <div class="nav">
-        <a href="">Manage Account</a>
-        <a href="">Send Money</a>
-        <a href="">Request Money</a>
-    </div> -->
+    <?php
+    include '../bank-v2/login/php/login-verification.php';
+    if($loggedin == true){?>
+        <div class="nav">
+            <a href="">Send Money</a>
+            <a href="">Request Money</a>
+            <a href="">Manage Account</a>
+        </div>
+
+    <?php }?>
 </body>
 </html>
