@@ -17,10 +17,10 @@
 
     <div class="register-form">
         <div class="form-item">
-            <input type="text" name="user" id="user" class="form-style" placeholder="username" autocomplete="off"/>
+            <input type="text" name="createUser" id="user" class="form-style" placeholder="username" autocomplete="off"/>
         </div>
         <div class="form-item">
-            <input type="password" name="password" id="password" class="form-style" placeholder="password" />
+            <input type="password" name="createPassword" id="password" class="form-style" placeholder="password" />
         </div>
         <div class="form-item">
             <p class="pull-left"><a href="login.php"><small>Log In</small></a></p>
