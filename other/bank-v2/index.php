@@ -1,7 +1,5 @@
 <?php
-// if (!defined('LOC')) {
-//     die('Direct access not permitted');
-// }
+include './login/php/error.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,15 +20,5 @@
             <button class="login-btn"><a href="./login/login.php"><i class="fa fa-sign-in fa-1x"></i> Log In</a></button>
         </div>
     </header>
-    <?php
-    include '../bank-v2/login/php/login-verification.php';
-    if($loggedin == true){?>
-        <div class="nav">
-            <a href="">Send Money</a>
-            <a href="">Request Money</a>
-            <a href="">Manage Account</a>
-        </div>
-
-    <?php }?>
 </body>
 </html>

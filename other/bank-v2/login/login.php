@@ -1,3 +1,6 @@
+<?php
+include './php/error.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,15 +19,14 @@
 <form action="" method="POST">
 
 	<div class="form-item">
-		<input type="text" name="user" id="user" class="form-style" placeholder="username" autocomplete="off"/>
+		<input type="text" name="user" class="form-style" placeholder="username" autocomplete="off"/>
 	</div>
 	<div class="form-item">
-		<input type="password" name="password" id="password" placeholder="password" class="form-style" />
-		<!-- <div class="pw-view"><i class="fa fa-eye"></i></div> -->
-		<p><a href="#" ><small>Forgot Password ?</small></a></p>	
+		<input type="password" name="password"  placeholder="password" class="form-style" />
+		<p><a href="#" ><h5>Forgot Password?</h5></a></p>	
 	</div>
 	<div class="form-item">
-		<p class="pull-left"><a href="register.php"><small>Register</small></a></p>
+		<p class="pull-left"><a href="register.php"><h5>Register</h5></a></p>
 		<input type="submit" class="login pull-right" value="Log In">
 		<div class="clear-fix"></div>
 	</div>
