@@ -4,8 +4,8 @@
     margin-top: 20px;
 }
 .nav > a{
-    padding: 10px 20px 10px 20px;
-    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     margin-right: -5px;
 }
 .nav>a:first-child{

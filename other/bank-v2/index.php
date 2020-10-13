@@ -20,5 +20,11 @@ include './login/php/error.php';
             <button class="login-btn"><a href="./login/login.php"><i class="fa fa-sign-in fa-1x"></i> Log In</a></button>
         </div>
     </header>
+    <div class="nav">
+    <a href="">Manage</a>
+    <a href="">Make a payment</a>
+    <a href="">Request payment</a>
+    <a href="">Order a card</a>
+    </div>
 </body>
 </html>
