@@ -19,7 +19,7 @@ include './php/error.php';
 <form action="" method="POST">
 
 	<div class="form-item">
-		<input type="text" name="user" class="form-style" placeholder="username" autocomplete="off"/>
+		<input type="text" name="username" class="form-style" placeholder="username" autocomplete="off"/>
 	</div>
 	<div class="form-item">
 		<input type="password" name="password"  placeholder="password" class="form-style" />
@@ -34,6 +34,15 @@ include './php/error.php';
 </div>
 </form>
 
+<?php
+$data = json_decode(file_get_contents('./json/accounts.json'), true);
+foreach($data["accounts"] as $key => $value){
+	if($_POST["username"] == $value["username"] && $_POST["password"] == $value["password"]){
+		//Log In
+		echo "Logged in";
+	}
+}
+?>
 <script src="../login/js/login.js"></script>
 </body>
 </html>

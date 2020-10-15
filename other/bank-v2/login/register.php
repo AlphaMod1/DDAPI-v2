@@ -43,6 +43,7 @@ if(isset($_POST["createUsername"]) && isset($_POST["createPassword"])){
 array_push($data["accounts"], $array);
 unset($array);
 file_put_contents('./json/accounts.json', json_encode($data));
+
 }
 ?>
 <script src="../login/js/login.js"></script>
