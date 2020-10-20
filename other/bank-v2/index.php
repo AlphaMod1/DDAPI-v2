@@ -1,18 +1,17 @@
 <?php
 include './login/php/error.php';
 
-$servername = "localhost";
-$username = "u632487067_ddapi_prod";
-$password = "Prodtheone1";
+// $servername = "localhost";
+// $username = "u632487067_ddapi_prod";
+// $password = "Prodtheone1";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+// $conn = new mysqli($servername, $username, $password);
 
 // Check connection
 // if ($conn->connect_error) {
 //   die("Connection failed: " . $conn->connect_error);
 // }
-echo "Connected successfully";
 
 ?>
 

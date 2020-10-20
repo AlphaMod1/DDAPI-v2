@@ -24,8 +24,8 @@ include './php/error.php';
         <div class="form-item">
             <input type="password" name="createPassword" class="form-style" placeholder="password" />
         </div>
+        <a  href="login.php" >Log In</a>
         <div class="form-item">
-            <p class="pull-left"><a href="login.php"><h5>Log In</h5></a></p>
             <input type="submit" class="login pull-right" value="Create Account">
             <div class="clear-fix"></div>
         </div>

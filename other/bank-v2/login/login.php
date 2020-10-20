@@ -22,11 +22,11 @@ include './php/error.php';
 		<input type="text" name="username" class="form-style" placeholder="username" autocomplete="off"/>
 	</div>
 	<div class="form-item">
-		<input type="password" name="password"  placeholder="password" class="form-style" />
-		<p><a href="#" ><h5>Forgot Password?</h5></a></p>	
+		<input type="password" name="password"  placeholder="password" class="form-style" />	
 	</div>
+	<a href="#" style = "display:block" class="forgot-password">Forgot Password?</a>
+	<a href="register.php">Register</a>
 	<div class="form-item">
-		<p class="pull-left"><a href="register.php"><h5>Register</h5></a></p>
 		<input type="submit" class="login pull-right" value="Log In">
 		<div class="clear-fix"></div>
 	</div>
