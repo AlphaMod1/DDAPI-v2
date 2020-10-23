@@ -34,16 +34,22 @@ include './php/error.php';
 </div>
 </form>
 <?php
+$IBANlength = 12;
 $data = json_decode(file_get_contents('./json/accounts.json'), true);
 $array = [
     "username" => $_POST["createUsername"],
-    "password" => $_POST["createPassword"]
+    "password" => $_POST["createPassword"],
+    "account" => $IBAN,
 ];
-if(isset($_POST["createUsername"]) && isset($_POST["createPassword"])){
-array_push($data["accounts"], $array);
-unset($array);
-file_put_contents('./json/accounts.json', json_encode($data));
-
+if (isset($_POST["createUsername"]) && isset($_POST["createPassword"])) {
+    $IBAN = "LT12";
+    array_push($data["accounts"], $array);
+    unset($array);
+    file_put_contents('./json/accounts.json', json_encode($data));
+    for ($i = 0; $i < $IBANlength; $i++) {
+        $IBAN .= rand(0, 9);
+    }
+    unset($IBAN);
 }
 ?>
 <script src="../login/js/login.js"></script>

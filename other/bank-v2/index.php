@@ -39,5 +39,6 @@ include './login/php/error.php';
     <a href="./make-payment/make-payment.php">Make a payment</a>
     <a href="./manage/manage-page.php">Manage</a>
     </div>
+
 </body>
 </html>

@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logo">
-        <a href="./index.php"><img src="../homepage/img/logov2.png" alt="Logo"></a>
+        <a href="../index.php"><img src="../homepage/img/logov2.png" alt="Logo"></a>
         </div>
         <div class="login">
             <button class="login-btn"><a href="./login/login.php"><i class="fa fa-sign-in fa-1x"></i> Log In</a></button>
