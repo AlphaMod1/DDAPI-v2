@@ -34,10 +34,10 @@ include './login/php/error.php';
         </div>
     </header>
     <div class="nav">
-    <a href="">Manage</a>
-    <a href="">Make a payment</a>
-    <a href="">Request payment</a>
-    <a href="">Order a card</a>
+    <a href="./order-card/order-card.php">Order a card</a>
+    <a href="./request-payment/request-payment.php">Request payment</a>
+    <a href="./make-payment/make-payment.php">Make a payment</a>
+    <a href="./manage/manage-page.php">Manage</a>
     </div>
 </body>
 </html>

@@ -1,0 +1,11 @@
+@import "../../homepage/css/bankheader.css";
+@import "../../homepage/css/logo.css";
+@import "../../homepage/css/nav.css";
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
