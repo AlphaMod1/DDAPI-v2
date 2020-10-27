@@ -1,3 +1,8 @@
+<?php 
+$data = json_decode(file_get_contents('../login/json/accounts.json'), true);
+require_once("../login/php/login-verification.php");
+include("../login/php/error.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +20,7 @@
         <a href="../index.php"><img src="../homepage/img/logov2.png" alt="Logo"></a>
         </div>
         <div class="login">
-            <button class="login-btn"><a href="./login/login.php"><i class="fa fa-sign-in fa-1x"></i> Log In</a></button>
+            <button class="login-btn"><a href="../login/login.php"><i class="fa fa-sign-in fa-1x"></i> Log In</a></button>
         </div>
     </header>
     <div class="nav">
@@ -24,5 +29,6 @@
     <a href="../make-payment/make-payment.php">Make a payment</a>
     <a href="manage-page.php">Manage</a>
     </div>
+    
 </body>
 </html>

@@ -1,3 +1,7 @@
+<?php
+include ("../login/php/login-verification.php");
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

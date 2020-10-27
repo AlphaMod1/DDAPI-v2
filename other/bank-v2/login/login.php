@@ -33,16 +33,11 @@ include './php/error.php';
 </div>
 </div>
 </form>
-
 <?php
 $data = json_decode(file_get_contents('./json/accounts.json'), true);
-foreach($data["accounts"] as $key => $value){
-	if($_POST["username"] == $value["username"] && $_POST["password"] == $value["password"]){
-		//Log In
-		echo "Logged in";
-	}
-}
+require_once("./php/login-verification.php");
 ?>
+
 <script src="../login/js/login.js"></script>
 </body>
 </html>
