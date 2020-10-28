@@ -5,8 +5,9 @@ foreach($data["accounts"] as $key => $value){
         //Log In
         session_start();
         $_SESSION["loggedin"] = true;
-        header("Location:http://localhost/DDAPI-v2/other/bank-v2/index.php?user=$_POST[username]");
-        exit;
+        $_SESSION["username"] = $_POST["username"];
+        header("Location:http://localhost/DDAPI-v2/other/bank-v2/index.php");
+        die;
         }
 }
 ?>

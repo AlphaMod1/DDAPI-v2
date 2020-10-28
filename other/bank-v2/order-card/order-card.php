@@ -1,3 +1,9 @@
+<?php
+session_start();
+include './login/php/error.php';
+include './login/php/login-verification.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +21,11 @@
         <a href="../index.php"><img src="../homepage/img/logov2.png" alt="Logo"></a>
         </div>
         <div class="login">
-            <button class="login-btn"><a href="../login/login.php"><i class="fa fa-sign-in fa-1x"></i> Log In</a></button>
+        <?php if ($_SESSION["loggedin"] === true) {?>
+            <button class="login-btn"><a href="../login/logout.php"><i class="fa fa-sign-in fa-1x"></i> Log Out</a></button>
+            <?php } else if ($_SESSION["loggedin"] !== true) {?>
+                <button class="login-btn"><a href="../login/login.php"><i class="fa fa-sign-in fa-1x"></i> Log In</a></button>
+            <?php }?>
         </div>
     </header>
     <div class="nav">

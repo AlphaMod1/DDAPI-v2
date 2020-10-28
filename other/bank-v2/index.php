@@ -1,6 +1,8 @@
 <?php
+session_start();
 include './login/php/error.php';
-require_once './login/php/login-verification.php';
+include './login/php/login-verification.php';
+
 // $servername = "localhost";
 // $username = "u632487067_ddapi_prod";
 // $password = "Prodtheone1";
@@ -32,7 +34,7 @@ require_once './login/php/login-verification.php';
         <div class="login">
         <?php if ($_SESSION["loggedin"] === true) {?>
             <button class="login-btn"><a href="./login/logout.php"><i class="fa fa-sign-in fa-1x"></i> Log Out</a></button>
-            <?php } else if($_SESSION["loggedin"] !== true) {?>
+            <?php } else if ($_SESSION["loggedin"] !== true) {?>
                 <button class="login-btn"><a href="./login/login.php"><i class="fa fa-sign-in fa-1x"></i> Log In</a></button>
             <?php }?>
         </div>
