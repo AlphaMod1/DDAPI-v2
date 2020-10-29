@@ -44,7 +44,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             echo '</tr></thead><tbody>';
             while ($row = mysqli_fetch_array($result)) {
                 echo '<tr id="id-' . htmlspecialchars($row['id']) . '">';
-                echo "<td scope='row'>" . htmlspecialchars($row['id'] . "</td>");
+                echo "<td scope='row'>" . htmlspecialchars($row['id']) . "</td>";
                 echo "<td>" . htmlspecialchars($row['username']) . "</td>";
                 echo "<td><a class='btn btn-danger btn-sm' href='delete.php?id=" . $row['id'] . "'>Delete</a></td>";
                 echo '</tr>';
