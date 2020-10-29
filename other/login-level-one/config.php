@@ -5,9 +5,9 @@ if(!defined('allowed')) {
  }
 
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'logins');
+define('DB_USERNAME', 'u632487067_admin_stage');
+define('DB_PASSWORD', 'Stagetheone1');
+define('DB_NAME', 'other_logins_users');
  
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
  
