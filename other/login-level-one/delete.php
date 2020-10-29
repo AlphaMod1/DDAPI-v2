@@ -4,7 +4,7 @@ if (isset($_POST["id"]) && !empty($_POST["id"])) {
     require_once "config.php";
     session_start();
 
-    $sql = "DELETE FROM users WHERE id = ?";
+    $sql = "DELETE FROM other_logins_users WHERE id = ?";
 
     if ($stmt = mysqli_prepare($link, $sql)) {
         mysqli_stmt_bind_param($stmt, "i", $param_id);

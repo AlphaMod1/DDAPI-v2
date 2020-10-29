@@ -32,7 +32,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 
     <?php
-    $sql = "SELECT * FROM users";
+    $sql = "SELECT * FROM other_logins_users";
     if ($result = mysqli_query($link, $sql)) {
         if (mysqli_num_rows($result) > 0) {
             echo '<table class="table table-hover">';
