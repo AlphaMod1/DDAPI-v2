@@ -62,7 +62,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt = mysqli_prepare($link, $sql)) {
             mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
-
+            echo 'test';
+            die(0);
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
 
