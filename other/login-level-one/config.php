@@ -4,7 +4,7 @@ if(!defined('allowed')) {
     die('Direct access not permitted');
  }
 
-define('DB_SERVER', 'u632487067_ddapi_stage');
+define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'u632487067_admin_stage');
 define('DB_PASSWORD', 'Stagetheone1');
 define('DB_NAME', 'other_logins_users');
