@@ -20,7 +20,7 @@ if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 
 <body>
     <div class="page-header">
-        <h1>Welcome to login test site (Level 1).</h1>
+        <h1>Welcome to login test site (Level 2).</h1>
     </div>
     <p class="page-content">
         <a href="login.php" id="login" class="btn btn-primary">Login</a>
