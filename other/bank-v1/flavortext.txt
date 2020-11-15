@@ -1,1 +1,0 @@
-Bank V1@@@A basic bank, that can be automatically tested <span style="color:red">Outdated work in progress</span>
