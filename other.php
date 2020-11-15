@@ -16,30 +16,31 @@ define('LOC', 'other')
 </head>
 
 <body>
-    <?php require_once(__DIR__ . '/views/header.php') ?>
+    <?php require_once __DIR__ . '/views/header.php'?>
 
     <h1>Other tools to test:</h1>
 
     <?php
-    $html = '<div class="href-list">';
-    $dirs =  array_diff(scandir(__DIR__ . '/other', 1), array('..', '.'));
-    $counter = 1;
-    for ($i = 0; $i < count($dirs); $i++) {
-        if (!file_exists(__DIR__ . '/other/' . $dirs[$i] . '/flavortext.txt') || !($file = file_get_contents(__DIR__ . '/other/' . $dirs[$i] . '/flavortext.txt'))) {
-            continue;
-        }
-        if (!strpos($file, '@@@')) {
-            continue;
-        }
-        $html .= '<div class = "item" >';
-        $html .= $counter++ . ') ';
-        $flavortext = explode('@@@', $file);
-        $html .= '<a href=./other/' . $dirs[$i] . '>' . $flavortext[0] . '</a> | <span>' . $flavortext[1] . '</span></div>';
+$html = '<div class="href-list">';
+$dirs = array_diff(scandir(__DIR__ . '/other', 1), array('..', '.'));
+$counter = 1;
+for ($i = 0; $i < count($dirs); $i++) {
+    if (!file_exists(__DIR__ . '/other/' . $dirs[$i] . '/flavortext.txt') || !($file = file_get_contents(__DIR__ . '/other/' . $dirs[$i] . '/flavortext.txt'))) {
+        continue;
     }
-    echo $html . '</div>';
-    ?>
-
-    <p class="github">Do you want to help me out? You can help me develop this page here: <a href="https://github.com/AlphaMod1/DDAPI/">https://github.com/AlphaMod1/DDAPI/</a></p>
+    if (!strpos($file, '@@@')) {
+        continue;
+    }
+    $html .= '<div class = "item" >';
+    $html .= $counter++ . ') ';
+    $flavortext = explode('@@@', $file);
+    $html .= '<a href=./other/' . $dirs[$i] . '>' . $flavortext[0] . '</a> | <span>' . $flavortext[1] . '</span></div>';
+}
+echo $html . '</div>';
+?> 
+<footer class="footer">
+    <!-- <p class="github">Do you want to help me out? You can help me develop this page here: <a href="https://github.com/AlphaMod1/DDAPI/">https://github.com/AlphaMod1/DDAPI/</a></p> -->
+</footer>
     <script src="./js/darkmode.js"></script>
     <script src='./js/main.js'></script>
     <script src="./js/dropdown.js"></script>

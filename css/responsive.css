@@ -1,0 +1,81 @@
+
+@media screen and (max-width: 500px) {
+    .header > a {
+        float: none;
+        display: block;
+        padding-left: -10px;
+        margin: 0 15% 0 15%;
+    }
+    .header{
+        width: 100vw;
+        min-height: 50px;
+        overflow:auto; 
+    }
+    .header > a:hover{
+        display: block;
+        margin: 0 15% 0 15%;
+    }
+   
+    .gear-is-open{
+        margin-bottom: 50px;
+    }
+    .header-right {
+        display: none;
+        float: left;
+        background-color: var(--dark);
+        width: 100vw;
+        margin-left: -10px;
+        
+    }
+    .fa-bars {
+        display: inline-block;
+        float: left;
+        background: none;
+        border: none;
+        font-size: 20px;
+        margin-top: 0.8rem;
+        text-decoration: none;
+        transition: 0.7s ease-in-out;
+    }
+    
+    .fa-bars:focus {
+        outline: none;
+    }
+    .fa-bars:hover{
+        opacity: 0.5;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .header-right{
+        margin-bottom: 50px;
+    }
+    .header-right > a {
+        display: block;
+        float: none;
+    }
+    .header-right > .fa-gear{
+        float: right;
+        margin-right: 20px;
+    }
+    #dropdown{
+        font-size: 15px;
+        padding-top: 10px;
+
+    }
+    .fa-moon-o{
+        font-size: 11px;
+    }
+    .switch{
+        margin-left: 31%;
+    }
+    #dropdown > span{
+        margin-left: 20px;
+    }
+    .fa-gear{
+        margin-top: 10px;
+    }
+}
+/* Docs */
+

@@ -1,6 +1,6 @@
 const bars = document.querySelector(".fa-bars");
 const nav = document.querySelector(".header-right");
-console.log(window.innerWidth);
+const footer = document.querySelector("footer");
 bars.onclick = () => {
     if (nav.style.display === "none" || nav.style.display === "") {
         nav.style.display = "inline-block";

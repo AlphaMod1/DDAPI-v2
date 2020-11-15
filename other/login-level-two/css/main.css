@@ -1,0 +1,30 @@
+body {
+    font: 14px sans-serif;
+}
+
+.error {
+    color: red;
+}
+
+.page-header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page-content {
+    text-align: center;
+}
+
+.page-content > a{
+    margin: 20px 10px 20px
+}
+
+.wrapper {
+    width: 350px;
+    padding: 20px;
+}
+
+.table{
+    width: 80%;
+    margin-left: 10%;
+}
